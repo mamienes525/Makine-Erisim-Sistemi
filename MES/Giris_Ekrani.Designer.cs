@@ -1,6 +1,6 @@
 ﻿namespace MES
 {
-    partial class Form1
+    partial class Giris_Ekrani
     {
         /// <summary>
         ///Gerekli tasarımcı değişkeni.

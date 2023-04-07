@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace MES
 {
-    public partial class Form1 : Form
+    public partial class Giris_Ekrani : Form
     {
-        public Form1()
+        public Giris_Ekrani()
         {
             InitializeComponent();
         }
