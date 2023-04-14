@@ -7,6 +7,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using FireSharp;
+using FireSharp.Config;
+using FireSharp.Interfaces;
+using FireSharp.Response;
+using Newtonsoft.Json;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace MES
@@ -18,7 +23,15 @@ namespace MES
         {
             InitializeComponent();
         }
-      
+
+        IFirebaseConfig ayar = new FirebaseConfig()
+        {
+            BasePath = "https://mes-856ce-default-rtdb.europe-west1.firebasedatabase.app/",
+            AuthSecret =  "GPUiUqI8cfVbnGlitQjHuLg51u73o0GBqPaQlmPE"
+        };
+        IFirebaseClient baglanti;
+
+
         private void Giris_Ekrani_Load(object sender, EventArgs e)
         {
 
@@ -57,6 +70,35 @@ namespace MES
         {
             if (Sifre.Text == "")
                 Sifre.Text = "Şifre";
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            baglanti = new FireSharp.FirebaseClient(ayar);
+
+            if (baglanti != null)
+                MessageBox.Show("Bağlantı sağlandı.");
+
+            var kullanici = new Kullanicilar()
+            {
+                kullaniciAdi = KullaniciAdi.Text,
+                sifre = Sifre.Text
+            };
+            /*
+            var setet = baglanti.SetAsync("Kullanicilar/" + kullanici.kullaniciAdi, kullanici);
+            if (setet != null)
+                MessageBox.Show("Eklendi");*/
+
+            FirebaseResponse getir = baglanti.Get(@"Kullanicilar");
+            Dictionary<string, Kullanicilar> veri = JsonConvert.DeserializeObject < Dictionary<string, Kullanicilar> > (getir.Body.ToString());
+
+            foreach(var item in veri)
+            {
+                if(item.Value.kullaniciAdi == KullaniciAdi.Text && item.Value.sifre == Sifre.Text)
+                {
+                    MessageBox.Show("Giriş yapıldı.");
+                }
+            }
         }
     }
 }
