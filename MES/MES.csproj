@@ -69,6 +69,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Ana_Sayfa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ana_Sayfa.Designer.cs">
+      <DependentUpon>Ana_Sayfa.cs</DependentUpon>
+    </Compile>
     <Compile Include="Giris_Ekrani.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -78,6 +84,9 @@
     <Compile Include="Kullanicilar.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Ana_Sayfa.resx">
+      <DependentUpon>Ana_Sayfa.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Giris_Ekrani.resx">
       <DependentUpon>Giris_Ekrani.cs</DependentUpon>
     </EmbeddedResource>
