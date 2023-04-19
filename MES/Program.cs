@@ -16,7 +16,8 @@ namespace MES
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Giris_Ekrani());
+            //Application.Run(new Giris_Ekrani());
+            Application.Run(new Ana_Sayfa());
         }
     }
 }
