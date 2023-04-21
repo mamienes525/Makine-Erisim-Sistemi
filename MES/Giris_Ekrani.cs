@@ -18,19 +18,16 @@ namespace MES
 {
     public partial class Giris_Ekrani : Form
     {
-        
-        public Giris_Ekrani()
-        {
-            InitializeComponent();
-        }
 
-        IFirebaseConfig ayar = new FirebaseConfig()
-        {
-            BasePath = "https://mes-856ce-default-rtdb.europe-west1.firebasedatabase.app/",
-            AuthSecret =  "GPUiUqI8cfVbnGlitQjHuLg51u73o0GBqPaQlmPE"
-        };
+        IFirebaseConfig ayar = new FirebaseConfig() { };
         IFirebaseClient baglanti;
 
+        public Giris_Ekrani(string AuthDomian, string ApiKey)
+        {
+            ayar.BasePath = AuthDomian;
+            ayar.AuthSecret = ApiKey;
+            InitializeComponent();
+        }
 
         private void Giris_Ekrani_Load(object sender, EventArgs e)
         {
@@ -84,10 +81,6 @@ namespace MES
                 kullaniciAdi = KullaniciAdi.Text,
                 sifre = Sifre.Text
             };
-            /*
-            var setet = baglanti.SetAsync("Kullanicilar/" + kullanici.kullaniciAdi, kullanici);
-            if (setet != null)
-                MessageBox.Show("Eklendi");*/
 
             FirebaseResponse getir = baglanti.Get(@"Kullanicilar");
             Dictionary<string, Kullanicilar> veri = JsonConvert.DeserializeObject < Dictionary<string, Kullanicilar> > (getir.Body.ToString());
