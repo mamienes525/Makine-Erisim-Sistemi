@@ -75,6 +75,18 @@
     <Compile Include="Ana_Sayfa.Designer.cs">
       <DependentUpon>Ana_Sayfa.cs</DependentUpon>
     </Compile>
+    <Compile Include="controls\MakineEkleCikar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controls\MakineEkleCikar.Designer.cs">
+      <DependentUpon>MakineEkleCikar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="controls\MakineListesi.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controls\MakineListesi.Designer.cs">
+      <DependentUpon>MakineListesi.cs</DependentUpon>
+    </Compile>
     <Compile Include="Giris_Ekrani.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -86,6 +98,12 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Ana_Sayfa.resx">
       <DependentUpon>Ana_Sayfa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="controls\MakineEkleCikar.resx">
+      <DependentUpon>MakineEkleCikar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="controls\MakineListesi.resx">
+      <DependentUpon>MakineListesi.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Giris_Ekrani.resx">
       <DependentUpon>Giris_Ekrani.cs</DependentUpon>

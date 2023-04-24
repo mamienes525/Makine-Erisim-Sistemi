@@ -23,8 +23,9 @@ namespace MES
 
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+            Application.Run(new Ana_Sayfa());
             Application.Run(new Giris_Ekrani(AuthDomain, ApiKey));
-            //Application.Run(new Ana_Sayfa());
+            
         }
     }
 }

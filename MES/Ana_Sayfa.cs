@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MES.controls;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -17,14 +18,26 @@ namespace MES
             InitializeComponent();
         }
 
-        private void pictureBox1_Click(object sender, EventArgs e)
+
+        private void kapatD_Click(object sender, EventArgs e)
         {
+            this.Close();
+            Application.Exit();
+        }
+
+        private void makiinelistesibtn_Click(object sender, EventArgs e)
+        {
+            var nesne = new MakineListesi();
+            panel.Controls.Clear();
+            panel.Controls.Add( nesne );
 
         }
 
-        private void label2_Click(object sender, EventArgs e)
+        private void makineeklecikarbtn_Click(object sender, EventArgs e)
         {
-
+            var nesne = new MakineEkleCikar();
+            panel.Controls.Clear();
+            panel.Controls.Add(nesne);
         }
     }
 }
