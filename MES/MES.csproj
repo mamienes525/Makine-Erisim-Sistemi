@@ -94,6 +94,7 @@
       <DependentUpon>Giris_Ekrani.cs</DependentUpon>
     </Compile>
     <Compile Include="Kullanicilar.cs" />
+    <Compile Include="Makineler.cs" />
     <Compile Include="makine_listesi_form.cs">
       <SubType>Form</SubType>
     </Compile>

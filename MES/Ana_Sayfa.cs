@@ -1,4 +1,6 @@
-﻿using MES.controls;
+﻿using FireSharp.Config;
+using FireSharp.Interfaces;
+using MES.controls;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -13,8 +15,13 @@ namespace MES
 {
     public partial class Ana_Sayfa : Form
     {
-        public Ana_Sayfa()
+        IFirebaseConfig ayar = new FirebaseConfig() { };
+        IFirebaseClient baglanti;
+
+        public Ana_Sayfa(string AuthDomian, string ApiKey)
         {
+            ayar.BasePath = AuthDomian;
+            ayar.AuthSecret = ApiKey;
             InitializeComponent();
         }
 
@@ -35,7 +42,7 @@ namespace MES
 
         private void makineeklecikarbtn_Click(object sender, EventArgs e)
         {
-            var nesne = new MakineEkleCikar();
+            var nesne = new MakineEkleCikar(ayar.BasePath, ayar.AuthSecret);
             panel.Controls.Clear();
             panel.Controls.Add(nesne);
         }

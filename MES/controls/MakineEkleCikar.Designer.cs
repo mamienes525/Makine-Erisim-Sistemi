@@ -28,11 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             this.Guncellebt = new System.Windows.Forms.Button();
             this.Silbtn = new System.Windows.Forms.Button();
             this.Eklebtn = new System.Windows.Forms.Button();
@@ -41,9 +41,9 @@
             this.Adi = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Departman = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.MakineDepTB = new System.Windows.Forms.TextBox();
+            this.makineSeriNoTB = new System.Windows.Forms.TextBox();
+            this.makineAdiTB = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -88,46 +88,46 @@
             // 
             this.MakineListesiTablo.AllowUserToAddRows = false;
             this.MakineListesiTablo.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle11.BackColor = System.Drawing.Color.Transparent;
-            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.Color.Transparent;
-            this.MakineListesiTablo.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle11;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.Transparent;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.Transparent;
+            this.MakineListesiTablo.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.MakineListesiTablo.BackgroundColor = System.Drawing.Color.White;
-            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle12.BackColor = System.Drawing.Color.Transparent;
-            dataGridViewCellStyle12.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            dataGridViewCellStyle12.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.MakineListesiTablo.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle12;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.Transparent;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.MakineListesiTablo.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.MakineListesiTablo.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.MakineListesiTablo.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.SeriNo,
             this.Adi,
             this.Departman});
-            dataGridViewCellStyle13.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle13.BackColor = System.Drawing.Color.Transparent;
-            dataGridViewCellStyle13.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            dataGridViewCellStyle13.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle13.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle13.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle13.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.MakineListesiTablo.DefaultCellStyle = dataGridViewCellStyle13;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.Transparent;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.MakineListesiTablo.DefaultCellStyle = dataGridViewCellStyle3;
             this.MakineListesiTablo.Dock = System.Windows.Forms.DockStyle.Left;
             this.MakineListesiTablo.Location = new System.Drawing.Point(0, 0);
             this.MakineListesiTablo.Name = "MakineListesiTablo";
             this.MakineListesiTablo.ReadOnly = true;
-            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle14.BackColor = System.Drawing.Color.Transparent;
-            dataGridViewCellStyle14.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            dataGridViewCellStyle14.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle14.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle14.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.MakineListesiTablo.RowHeadersDefaultCellStyle = dataGridViewCellStyle14;
-            dataGridViewCellStyle15.BackColor = System.Drawing.Color.Transparent;
-            dataGridViewCellStyle15.SelectionBackColor = System.Drawing.Color.Transparent;
-            this.MakineListesiTablo.RowsDefaultCellStyle = dataGridViewCellStyle15;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.Transparent;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.MakineListesiTablo.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.Transparent;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.Transparent;
+            this.MakineListesiTablo.RowsDefaultCellStyle = dataGridViewCellStyle5;
             this.MakineListesiTablo.Size = new System.Drawing.Size(344, 631);
             this.MakineListesiTablo.TabIndex = 4;
             this.MakineListesiTablo.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.MakineListesiTablo_CellContentClick);
@@ -156,9 +156,9 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.Transparent;
-            this.panel2.Controls.Add(this.textBox3);
-            this.panel2.Controls.Add(this.textBox2);
-            this.panel2.Controls.Add(this.textBox1);
+            this.panel2.Controls.Add(this.MakineDepTB);
+            this.panel2.Controls.Add(this.makineSeriNoTB);
+            this.panel2.Controls.Add(this.makineAdiTB);
             this.panel2.Controls.Add(this.label3);
             this.panel2.Controls.Add(this.label2);
             this.panel2.Controls.Add(this.label1);
@@ -170,32 +170,32 @@
             this.panel2.TabIndex = 5;
             this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
-            // textBox3
+            // MakineDepTB
             // 
-            this.textBox3.Location = new System.Drawing.Point(192, 155);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(221, 20);
-            this.textBox3.TabIndex = 13;
-            this.textBox3.Text = " ";
-            this.textBox3.Click += new System.EventHandler(this.textBox3_Click);
+            this.MakineDepTB.Location = new System.Drawing.Point(192, 155);
+            this.MakineDepTB.Name = "MakineDepTB";
+            this.MakineDepTB.Size = new System.Drawing.Size(221, 20);
+            this.MakineDepTB.TabIndex = 13;
+            this.MakineDepTB.Text = " ";
+            this.MakineDepTB.Click += new System.EventHandler(this.textBox3_Click);
             // 
-            // textBox2
+            // makineSeriNoTB
             // 
-            this.textBox2.Location = new System.Drawing.Point(192, 120);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(221, 20);
-            this.textBox2.TabIndex = 12;
-            this.textBox2.Text = " ";
-            this.textBox2.Click += new System.EventHandler(this.textBox2_Click);
+            this.makineSeriNoTB.Location = new System.Drawing.Point(192, 120);
+            this.makineSeriNoTB.Name = "makineSeriNoTB";
+            this.makineSeriNoTB.Size = new System.Drawing.Size(221, 20);
+            this.makineSeriNoTB.TabIndex = 12;
+            this.makineSeriNoTB.Text = " ";
+            this.makineSeriNoTB.Click += new System.EventHandler(this.textBox2_Click);
             // 
-            // textBox1
+            // makineAdiTB
             // 
-            this.textBox1.Location = new System.Drawing.Point(192, 88);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(221, 20);
-            this.textBox1.TabIndex = 11;
-            this.textBox1.Text = " ";
-            this.textBox1.Click += new System.EventHandler(this.textBox1_Click);
+            this.makineAdiTB.Location = new System.Drawing.Point(192, 88);
+            this.makineAdiTB.Name = "makineAdiTB";
+            this.makineAdiTB.Size = new System.Drawing.Size(221, 20);
+            this.makineAdiTB.TabIndex = 11;
+            this.makineAdiTB.Text = " ";
+            this.makineAdiTB.Click += new System.EventHandler(this.textBox1_Click);
             // 
             // label3
             // 
@@ -240,6 +240,7 @@
             this.Controls.Add(this.Eklebtn);
             this.Name = "MakineEkleCikar";
             this.Size = new System.Drawing.Size(879, 631);
+            this.Load += new System.EventHandler(this.MakineEkleCikar_Load);
             ((System.ComponentModel.ISupportInitialize)(this.MakineListesiTablo)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
@@ -253,9 +254,9 @@
         private System.Windows.Forms.Button Eklebtn;
         private System.Windows.Forms.DataGridView MakineListesiTablo;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox MakineDepTB;
+        private System.Windows.Forms.TextBox makineSeriNoTB;
+        private System.Windows.Forms.TextBox makineAdiTB;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;

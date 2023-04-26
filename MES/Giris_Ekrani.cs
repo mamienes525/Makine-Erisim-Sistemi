@@ -89,7 +89,7 @@ namespace MES
             {
                 if(item.Value.kullaniciAdi == KullaniciAdi.Text && item.Value.sifre == Sifre.Text)
                 {
-                   Ana_Sayfa ana_Sayfa = new Ana_Sayfa();
+                   Ana_Sayfa ana_Sayfa = new Ana_Sayfa(ayar.BasePath, ayar.AuthSecret);
                     ana_Sayfa.Show();
                     this.Hide();
                 }
