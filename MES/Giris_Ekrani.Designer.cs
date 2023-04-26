@@ -30,7 +30,6 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Giris_Ekrani));
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.kapatD = new System.Windows.Forms.Button();
             this.KullaniciAdi = new System.Windows.Forms.TextBox();
             this.Sifre = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
@@ -42,34 +41,20 @@
             this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(523, -25);
+            this.pictureBox1.Location = new System.Drawing.Point(515, -45);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(652, 573);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             this.pictureBox1.WaitOnLoad = true;
-            // 
-            // kapatD
-            // 
-            this.kapatD.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.kapatD.BackColor = System.Drawing.Color.Transparent;
-            this.kapatD.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("kapatD.BackgroundImage")));
-            this.kapatD.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.kapatD.FlatAppearance.BorderSize = 0;
-            this.kapatD.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.kapatD.Location = new System.Drawing.Point(1327, 12);
-            this.kapatD.Name = "kapatD";
-            this.kapatD.Size = new System.Drawing.Size(47, 43);
-            this.kapatD.TabIndex = 1;
-            this.kapatD.UseVisualStyleBackColor = false;
-            this.kapatD.Click += new System.EventHandler(this.kapatD_Click);
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // KullaniciAdi
             // 
             this.KullaniciAdi.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.KullaniciAdi.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.KullaniciAdi.Location = new System.Drawing.Point(719, 350);
+            this.KullaniciAdi.Location = new System.Drawing.Point(711, 330);
             this.KullaniciAdi.Name = "KullaniciAdi";
             this.KullaniciAdi.Size = new System.Drawing.Size(259, 31);
             this.KullaniciAdi.TabIndex = 2;
@@ -81,7 +66,7 @@
             // 
             this.Sifre.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Sifre.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.Sifre.Location = new System.Drawing.Point(719, 396);
+            this.Sifre.Location = new System.Drawing.Point(711, 376);
             this.Sifre.Name = "Sifre";
             this.Sifre.Size = new System.Drawing.Size(259, 31);
             this.Sifre.TabIndex = 3;
@@ -95,7 +80,7 @@
             this.button1.BackColor = System.Drawing.Color.Black;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.button1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.button1.Location = new System.Drawing.Point(770, 447);
+            this.button1.Location = new System.Drawing.Point(762, 427);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(159, 32);
             this.button1.TabIndex = 4;
@@ -111,21 +96,18 @@
             this.BackColor = System.Drawing.Color.WhiteSmoke;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1386, 788);
-            this.ControlBox = false;
+            this.ClientSize = new System.Drawing.Size(1370, 749);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.Sifre);
             this.Controls.Add(this.KullaniciAdi);
-            this.Controls.Add(this.kapatD);
             this.Controls.Add(this.pictureBox1);
             this.Cursor = System.Windows.Forms.Cursors.Default;
             this.DoubleBuffered = true;
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.HelpButton = true;
             this.MaximizeBox = false;
-            this.MinimizeBox = false;
             this.Name = "Giris_Ekrani";
+            this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
-            this.Text = "GirisEkrani";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Giris_Ekrani_Load);
             this.Layout += new System.Windows.Forms.LayoutEventHandler(this.Giris_Ekrani_Layout);
@@ -138,7 +120,6 @@
         #endregion
 
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Button kapatD;
         private System.Windows.Forms.TextBox KullaniciAdi;
         private System.Windows.Forms.TextBox Sifre;
         private System.Windows.Forms.Button button1;

@@ -29,7 +29,7 @@ namespace MES
         {
             var nesne = new MakineListesi();
             panel.Controls.Clear();
-            panel.Controls.Add( nesne );
+            panel.Controls.Add(nesne);
 
         }
 
@@ -38,6 +38,16 @@ namespace MES
             var nesne = new MakineEkleCikar();
             panel.Controls.Clear();
             panel.Controls.Add(nesne);
+        }
+
+        private void panel_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Ana_Sayfa_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

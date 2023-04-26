@@ -42,7 +42,6 @@
             this.AnaSayfabtn = new System.Windows.Forms.Button();
             this.Hakkımızdabtn = new System.Windows.Forms.Button();
             this.Urunlerbtn = new System.Windows.Forms.Button();
-            this.Iletisimbtn = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -55,7 +54,7 @@
             this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(517, -96);
+            this.pictureBox1.Location = new System.Drawing.Point(475, -115);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(652, 573);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -97,18 +96,19 @@
             this.panel.Controls.Add(this.pictureBox2);
             this.panel.Controls.Add(this.pictureBox3);
             this.panel.Controls.Add(this.pictureBox4);
-            this.panel.Location = new System.Drawing.Point(417, 259);
+            this.panel.Location = new System.Drawing.Point(375, 240);
             this.panel.Name = "panel";
             this.panel.Size = new System.Drawing.Size(848, 534);
             this.panel.TabIndex = 29;
             this.panel.TabStop = false;
+            this.panel.Enter += new System.EventHandler(this.panel_Enter);
             // 
             // makiinelistesibtn
             // 
             this.makiinelistesibtn.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.makiinelistesibtn.BackColor = System.Drawing.Color.Transparent;
             this.makiinelistesibtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.makiinelistesibtn.Location = new System.Drawing.Point(118, 436);
+            this.makiinelistesibtn.Location = new System.Drawing.Point(76, 417);
             this.makiinelistesibtn.Name = "makiinelistesibtn";
             this.makiinelistesibtn.Size = new System.Drawing.Size(205, 35);
             this.makiinelistesibtn.TabIndex = 30;
@@ -121,11 +121,11 @@
             // 
             this.makineeklecikarbtn.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.makineeklecikarbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.makineeklecikarbtn.Location = new System.Drawing.Point(118, 486);
+            this.makineeklecikarbtn.Location = new System.Drawing.Point(76, 467);
             this.makineeklecikarbtn.Name = "makineeklecikarbtn";
             this.makineeklecikarbtn.Size = new System.Drawing.Size(205, 35);
             this.makineeklecikarbtn.TabIndex = 31;
-            this.makineeklecikarbtn.Text = "Makine Eke/Çıkar";
+            this.makineeklecikarbtn.Text = "Makine Ekle/Çıkar";
             this.makineeklecikarbtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.makineeklecikarbtn.UseVisualStyleBackColor = true;
             this.makineeklecikarbtn.Click += new System.EventHandler(this.makineeklecikarbtn_Click);
@@ -134,7 +134,7 @@
             // 
             this.aylikraporbtn.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.aylikraporbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.aylikraporbtn.Location = new System.Drawing.Point(118, 536);
+            this.aylikraporbtn.Location = new System.Drawing.Point(76, 517);
             this.aylikraporbtn.Name = "aylikraporbtn";
             this.aylikraporbtn.Size = new System.Drawing.Size(205, 35);
             this.aylikraporbtn.TabIndex = 32;
@@ -146,7 +146,7 @@
             // 
             this.personellistesibtn.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.personellistesibtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.personellistesibtn.Location = new System.Drawing.Point(118, 586);
+            this.personellistesibtn.Location = new System.Drawing.Point(76, 567);
             this.personellistesibtn.Name = "personellistesibtn";
             this.personellistesibtn.Size = new System.Drawing.Size(205, 35);
             this.personellistesibtn.TabIndex = 33;
@@ -162,7 +162,7 @@
             this.kapatD.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.kapatD.FlatAppearance.BorderSize = 0;
             this.kapatD.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.kapatD.Location = new System.Drawing.Point(1412, 12);
+            this.kapatD.Location = new System.Drawing.Point(1354, -4);
             this.kapatD.Name = "kapatD";
             this.kapatD.Size = new System.Drawing.Size(47, 43);
             this.kapatD.TabIndex = 34;
@@ -174,7 +174,7 @@
             this.AnaSayfabtn.Font = new System.Drawing.Font("Perpetua Titling MT", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.AnaSayfabtn.Location = new System.Drawing.Point(3, 1);
             this.AnaSayfabtn.Name = "AnaSayfabtn";
-            this.AnaSayfabtn.Size = new System.Drawing.Size(466, 54);
+            this.AnaSayfabtn.Size = new System.Drawing.Size(445, 30);
             this.AnaSayfabtn.TabIndex = 35;
             this.AnaSayfabtn.Text = "ANASAYFA";
             this.AnaSayfabtn.UseVisualStyleBackColor = true;
@@ -182,9 +182,9 @@
             // Hakkımızdabtn
             // 
             this.Hakkımızdabtn.Font = new System.Drawing.Font("Perpetua Titling MT", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Hakkımızdabtn.Location = new System.Drawing.Point(466, 1);
+            this.Hakkımızdabtn.Location = new System.Drawing.Point(449, 1);
             this.Hakkımızdabtn.Name = "Hakkımızdabtn";
-            this.Hakkımızdabtn.Size = new System.Drawing.Size(466, 54);
+            this.Hakkımızdabtn.Size = new System.Drawing.Size(461, 30);
             this.Hakkımızdabtn.TabIndex = 36;
             this.Hakkımızdabtn.Text = "HAKKIMIZDA";
             this.Hakkımızdabtn.UseVisualStyleBackColor = true;
@@ -192,22 +192,12 @@
             // Urunlerbtn
             // 
             this.Urunlerbtn.Font = new System.Drawing.Font("Perpetua Titling MT", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Urunlerbtn.Location = new System.Drawing.Point(927, 1);
+            this.Urunlerbtn.Location = new System.Drawing.Point(909, 1);
             this.Urunlerbtn.Name = "Urunlerbtn";
-            this.Urunlerbtn.Size = new System.Drawing.Size(466, 54);
+            this.Urunlerbtn.Size = new System.Drawing.Size(406, 30);
             this.Urunlerbtn.TabIndex = 37;
-            this.Urunlerbtn.Text = "ÜRÜNLER";
+            this.Urunlerbtn.Text = "İLETİŞİM";
             this.Urunlerbtn.UseVisualStyleBackColor = true;
-            // 
-            // Iletisimbtn
-            // 
-            this.Iletisimbtn.Font = new System.Drawing.Font("Perpetua Titling MT", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Iletisimbtn.Location = new System.Drawing.Point(1380, 1);
-            this.Iletisimbtn.Name = "Iletisimbtn";
-            this.Iletisimbtn.Size = new System.Drawing.Size(466, 54);
-            this.Iletisimbtn.TabIndex = 38;
-            this.Iletisimbtn.Text = "İLETİŞİM";
-            this.Iletisimbtn.UseVisualStyleBackColor = true;
             // 
             // Ana_Sayfa
             // 
@@ -217,9 +207,8 @@
             this.BackColor = System.Drawing.Color.White;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1471, 826);
+            this.ClientSize = new System.Drawing.Size(1386, 788);
             this.ControlBox = false;
-            this.Controls.Add(this.Iletisimbtn);
             this.Controls.Add(this.Urunlerbtn);
             this.Controls.Add(this.Hakkımızdabtn);
             this.Controls.Add(this.AnaSayfabtn);
@@ -239,6 +228,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "Ana_Sayfa";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.Ana_Sayfa_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
@@ -262,6 +252,5 @@
         private System.Windows.Forms.Button AnaSayfabtn;
         private System.Windows.Forms.Button Hakkımızdabtn;
         private System.Windows.Forms.Button Urunlerbtn;
-        private System.Windows.Forms.Button Iletisimbtn;
     }
 }

@@ -89,9 +89,22 @@ namespace MES
             {
                 if(item.Value.kullaniciAdi == KullaniciAdi.Text && item.Value.sifre == Sifre.Text)
                 {
-                    MessageBox.Show("Giriş yapıldı.");
+                   Ana_Sayfa ana_Sayfa = new Ana_Sayfa();
+                    ana_Sayfa.Show();
+                    this.Hide();
                 }
+
             }
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
         }
     }
 }

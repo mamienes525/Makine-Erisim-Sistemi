@@ -83,5 +83,15 @@ namespace MES.controls
                 textBox3.Clear();
             else return;
         }
+
+        private void MakineListesiTablo_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
