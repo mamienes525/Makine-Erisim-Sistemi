@@ -131,10 +131,7 @@ namespace MES.controls
             else return;
         }
 
-        private void MakineListesiTablo_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
+      
 
         private void panel2_Paint(object sender, PaintEventArgs e)
         {

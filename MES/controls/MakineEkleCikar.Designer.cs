@@ -130,7 +130,6 @@
             this.MakineListesiTablo.RowsDefaultCellStyle = dataGridViewCellStyle5;
             this.MakineListesiTablo.Size = new System.Drawing.Size(344, 631);
             this.MakineListesiTablo.TabIndex = 4;
-            this.MakineListesiTablo.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.MakineListesiTablo_CellContentClick);
             // 
             // SeriNo
             // 

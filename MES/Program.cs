@@ -15,11 +15,11 @@ namespace MES
         [STAThread]
         static void Main()
         {
-            XmlDocument xml = new XmlDocument();
-            xml.Load("../../Resources/veri.xml");
+            XmlDocument config = new XmlDocument();
+            config.Load("config1.xml");
 
-            string AuthDomain = xml.DocumentElement.SelectSingleNode("/FireBase/AuthDomain").InnerText.Trim();
-            string ApiKey = xml.DocumentElement.SelectSingleNode("/FireBase/ApiKey").InnerText.Trim();
+            string AuthDomain = config.DocumentElement.SelectSingleNode("/FireBase/AuthDomain").InnerText.Trim();
+            string ApiKey = config.DocumentElement.SelectSingleNode("/FireBase/ApiKey").InnerText.Trim();
 
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
