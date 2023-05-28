@@ -35,7 +35,6 @@
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.panel = new System.Windows.Forms.GroupBox();
             this.makiinelistesibtn = new System.Windows.Forms.Button();
-            this.makineeklecikarbtn = new System.Windows.Forms.Button();
             this.aylikraporbtn = new System.Windows.Forms.Button();
             this.personellistesibtn = new System.Windows.Forms.Button();
             this.kapatD = new System.Windows.Forms.Button();
@@ -117,24 +116,11 @@
             this.makiinelistesibtn.UseVisualStyleBackColor = false;
             this.makiinelistesibtn.Click += new System.EventHandler(this.makiinelistesibtn_Click);
             // 
-            // makineeklecikarbtn
-            // 
-            this.makineeklecikarbtn.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.makineeklecikarbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.makineeklecikarbtn.Location = new System.Drawing.Point(76, 467);
-            this.makineeklecikarbtn.Name = "makineeklecikarbtn";
-            this.makineeklecikarbtn.Size = new System.Drawing.Size(205, 35);
-            this.makineeklecikarbtn.TabIndex = 31;
-            this.makineeklecikarbtn.Text = "Makine Ekle/Çıkar";
-            this.makineeklecikarbtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.makineeklecikarbtn.UseVisualStyleBackColor = true;
-            this.makineeklecikarbtn.Click += new System.EventHandler(this.makineeklecikarbtn_Click);
-            // 
             // aylikraporbtn
             // 
             this.aylikraporbtn.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.aylikraporbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.aylikraporbtn.Location = new System.Drawing.Point(76, 517);
+            this.aylikraporbtn.Location = new System.Drawing.Point(76, 467);
             this.aylikraporbtn.Name = "aylikraporbtn";
             this.aylikraporbtn.Size = new System.Drawing.Size(205, 35);
             this.aylikraporbtn.TabIndex = 32;
@@ -146,7 +132,7 @@
             // 
             this.personellistesibtn.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.personellistesibtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.personellistesibtn.Location = new System.Drawing.Point(76, 567);
+            this.personellistesibtn.Location = new System.Drawing.Point(76, 517);
             this.personellistesibtn.Name = "personellistesibtn";
             this.personellistesibtn.Size = new System.Drawing.Size(205, 35);
             this.personellistesibtn.TabIndex = 33;
@@ -162,7 +148,7 @@
             this.kapatD.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.kapatD.FlatAppearance.BorderSize = 0;
             this.kapatD.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.kapatD.Location = new System.Drawing.Point(1354, -4);
+            this.kapatD.Location = new System.Drawing.Point(1327, -4);
             this.kapatD.Name = "kapatD";
             this.kapatD.Size = new System.Drawing.Size(47, 43);
             this.kapatD.TabIndex = 34;
@@ -215,7 +201,6 @@
             this.Controls.Add(this.kapatD);
             this.Controls.Add(this.personellistesibtn);
             this.Controls.Add(this.aylikraporbtn);
-            this.Controls.Add(this.makineeklecikarbtn);
             this.Controls.Add(this.makiinelistesibtn);
             this.Controls.Add(this.panel);
             this.Controls.Add(this.pictureBox1);
@@ -245,7 +230,6 @@
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.GroupBox panel;
         private System.Windows.Forms.Button makiinelistesibtn;
-        private System.Windows.Forms.Button makineeklecikarbtn;
         private System.Windows.Forms.Button aylikraporbtn;
         private System.Windows.Forms.Button personellistesibtn;
         private System.Windows.Forms.Button kapatD;

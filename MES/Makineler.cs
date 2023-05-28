@@ -10,7 +10,10 @@ namespace MES
     {
         public string adi { get; set; }
         public string seriNo { get; set; }
-        public string dep { get; set; } 
+        public string dep { get; set; }
+        public string durum { get; set; }
+        public string resimUrl { get; set; }
+
 
     }
 }

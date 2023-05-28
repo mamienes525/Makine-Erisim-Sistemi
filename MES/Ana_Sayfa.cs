@@ -1,4 +1,6 @@
-﻿using FireSharp.Config;
+﻿using Firebase.Auth;
+using Firebase.Database;
+using FireSharp.Config;
 using FireSharp.Interfaces;
 using MES.controls;
 using System;
@@ -15,14 +17,26 @@ namespace MES
 {
     public partial class Ana_Sayfa : Form
     {
-        IFirebaseConfig ayar = new FirebaseConfig() { };
-        IFirebaseClient baglanti;
+        private UserCredential kullanici_kimligi;
 
-        public Ana_Sayfa(string AuthDomian, string ApiKey)
+        public Ana_Sayfa(UserCredential kullanici_kimligi)
         {
-            ayar.BasePath = AuthDomian;
-            ayar.AuthSecret = ApiKey;
             InitializeComponent();
+            try
+            {
+                this.kullanici_kimligi = kullanici_kimligi;
+                var firebaseClient = new FirebaseClient(Config.FBDomain,
+                    new FirebaseOptions
+                    {
+                        AuthTokenAsyncFactory = () => kullanici_kimligi.User.GetIdTokenAsync()
+                    }
+                );
+            }
+            catch(Exception exc) {
+                MessageBox.Show("Hata: " + exc.Message);
+            
+            }
+
         }
 
 
@@ -34,17 +48,10 @@ namespace MES
 
         private void makiinelistesibtn_Click(object sender, EventArgs e)
         {
-            var nesne = new MakineListesi();
+            var nesne = new MakineListesi(kullanici_kimligi);
             panel.Controls.Clear();
             panel.Controls.Add(nesne);
 
-        }
-
-        private void makineeklecikarbtn_Click(object sender, EventArgs e)
-        {
-            var nesne = new MakineEkleCikar(ayar.BasePath, ayar.AuthSecret);
-            panel.Controls.Clear();
-            panel.Controls.Add(nesne);
         }
 
         private void panel_Enter(object sender, EventArgs e)
