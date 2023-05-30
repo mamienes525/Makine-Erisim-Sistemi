@@ -78,5 +78,13 @@ namespace MES
             if (Sifre.Text == "")
                 Sifre.Text = "Şifre";
         }
+
+        private void GirisYapKisaYol(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                button1.PerformClick();
+            }
+        }
     }
 }

@@ -42,7 +42,7 @@
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(687, -55);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(869, 705);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -55,7 +55,7 @@
             this.KullaniciAdi.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.KullaniciAdi.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.KullaniciAdi.Location = new System.Drawing.Point(948, 406);
-            this.KullaniciAdi.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.KullaniciAdi.Margin = new System.Windows.Forms.Padding(4);
             this.KullaniciAdi.Name = "KullaniciAdi";
             this.KullaniciAdi.Size = new System.Drawing.Size(344, 37);
             this.KullaniciAdi.TabIndex = 2;
@@ -68,8 +68,9 @@
             this.Sifre.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Sifre.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.Sifre.Location = new System.Drawing.Point(948, 463);
-            this.Sifre.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Sifre.Margin = new System.Windows.Forms.Padding(4);
             this.Sifre.Name = "Sifre";
+            this.Sifre.PasswordChar = '*';
             this.Sifre.Size = new System.Drawing.Size(344, 37);
             this.Sifre.TabIndex = 3;
             this.Sifre.Text = "Şifre";
@@ -83,7 +84,7 @@
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.button1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.button1.Location = new System.Drawing.Point(1016, 526);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(212, 39);
             this.button1.TabIndex = 4;
@@ -107,12 +108,14 @@
             this.Cursor = System.Windows.Forms.Cursors.Default;
             this.DoubleBuffered = true;
             this.HelpButton = true;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.KeyPreview = true;
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.Name = "Giris_Ekrani";
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.GirisYapKisaYol);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
