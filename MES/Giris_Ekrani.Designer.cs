@@ -33,6 +33,7 @@
             this.KullaniciAdi = new System.Windows.Forms.TextBox();
             this.Sifre = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
+            this.gor = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -71,7 +72,7 @@
             this.Sifre.Margin = new System.Windows.Forms.Padding(4);
             this.Sifre.Name = "Sifre";
             this.Sifre.PasswordChar = '*';
-            this.Sifre.Size = new System.Drawing.Size(344, 37);
+            this.Sifre.Size = new System.Drawing.Size(287, 37);
             this.Sifre.TabIndex = 3;
             this.Sifre.Text = "Şifre";
             this.Sifre.Enter += new System.EventHandler(this.Sifre_Enter);
@@ -92,6 +93,21 @@
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // gor
+            // 
+            this.gor.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.gor.AutoSize = true;
+            this.gor.BackColor = System.Drawing.Color.Transparent;
+            this.gor.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.gor.ForeColor = System.Drawing.Color.White;
+            this.gor.Location = new System.Drawing.Point(1241, 462);
+            this.gor.Name = "gor";
+            this.gor.Size = new System.Drawing.Size(51, 36);
+            this.gor.TabIndex = 20;
+            this.gor.Text = "👀";
+            this.gor.MouseLeave += new System.EventHandler(this.SifreGizle);
+            this.gor.MouseHover += new System.EventHandler(this.SifreGor);
+            // 
             // Giris_Ekrani
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -101,6 +117,7 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1827, 922);
+            this.Controls.Add(this.gor);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.Sifre);
             this.Controls.Add(this.KullaniciAdi);
@@ -128,6 +145,7 @@
         private System.Windows.Forms.TextBox KullaniciAdi;
         private System.Windows.Forms.TextBox Sifre;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label gor;
     }
 }
 

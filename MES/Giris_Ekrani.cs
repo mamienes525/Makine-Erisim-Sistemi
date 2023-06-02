@@ -86,5 +86,15 @@ namespace MES
                 button1.PerformClick();
             }
         }
+
+        private void SifreGor(object sender, EventArgs e)
+        {
+            Sifre.PasswordChar = '\0';
+        }
+
+        private void SifreGizle(object sender, EventArgs e)
+        {
+            Sifre.PasswordChar = '*';
+        }
     }
 }

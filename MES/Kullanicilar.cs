@@ -8,7 +8,8 @@ namespace MES
 {
     internal class Kullanicilar
     {
-        public string kullaniciAdi { get; set; }
+        public string isim { get; set; }
+        public string eposta { get; set; }
         public string sifre { get; set; }
 
     }

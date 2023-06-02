@@ -229,6 +229,12 @@
     <Compile Include="controls\MaklineListesi.Designer.cs">
       <DependentUpon>MaklineListesi.cs</DependentUpon>
     </Compile>
+    <Compile Include="controls\PersonelListesi.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controls\PersonelListesi.Designer.cs">
+      <DependentUpon>PersonelListesi.cs</DependentUpon>
+    </Compile>
     <Compile Include="Giris_Ekrani.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -244,6 +250,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="controls\MaklineListesi.resx">
       <DependentUpon>MaklineListesi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="controls\PersonelListesi.resx">
+      <DependentUpon>PersonelListesi.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Giris_Ekrani.resx">
       <DependentUpon>Giris_Ekrani.cs</DependentUpon>

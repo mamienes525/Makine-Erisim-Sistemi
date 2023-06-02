@@ -63,5 +63,12 @@ namespace MES
         {
 
         }
+
+        private void personellistesibtn_Click(object sender, EventArgs e)
+        {
+            var nesne = new Personel_Listesi(kullanici_kimligi);
+            panel.Controls.Clear();
+            panel.Controls.Add(nesne);
+        }
     }
 }

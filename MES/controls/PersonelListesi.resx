@@ -117,11 +117,14 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <metadata name="errorProvider1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="MakineResim.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAHgAAAB4CAYAAAA5ZDbSAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        vwAADr8BOAVTJAAADaRJREFUeF7tnYtXVNUex+cPuKXyZmBggAFEQhBfl1DULA1CQPP2sKUgiKJlooue
+        vQAADr0BR/uQrQAADaRJREFUeF7tnYtXVNUex+cPuKXyZmBggAFEQhBfl1DULA1CQPP2sKUgiKJlooue
         dm/ve9cqy6xMbS3LLC1srVvd0lu37qq0uwwfEAm+RYU0TQwNe1u/u7/bg6HsMzNn5pyBOWd/1/osWc6e
         c/bMd/b7t/exkRfav28fPbtsGZXNmEHXjhtHGWmDyOVMoKR4pyQAJCck0uBB6ZQ/YQLNKi+nF1etosMt
         LYo77qVq8G+//UYfffghFRVOovCQUEqMixfeXBJ4EhxxFBEaRpNLSuiTjz9WHBNLaHBbaytNn3YbxURF
@@ -182,7 +185,4 @@
         4FwLUSYk+oNVISwcYG4Z04+YofJunzbR/wEbtGZ3tVkaDgAAAABJRU5ErkJggg==
 </value>
   </data>
-  <metadata name="errorProvider1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
 </root>

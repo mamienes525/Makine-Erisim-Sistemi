@@ -26,7 +26,6 @@ namespace MES.controls
     {
         private UserCredential kullanici_kimligi;
         private FirebaseClient istemci;
-        private Config ayarlar;
         private string resim_url = "";
         FirebaseStorage depolama;
         public MakineListesi(UserCredential kullanici_kimligi)
