@@ -40,7 +40,7 @@ namespace MES.controls
                     {
                         AuthTokenAsyncFactory = () => kullanici_kimligi.User.GetIdTokenAsync()
                     });
-                   this.depolama = new FirebaseStorage(Config.FSDomain,
+                this.depolama = new FirebaseStorage(Config.FSDomain,
                     new FirebaseStorageOptions
                     {
                         AuthTokenAsyncFactory = () => kullanici_kimligi.User.GetIdTokenAsync(),
@@ -101,21 +101,6 @@ namespace MES.controls
                     MakineListesiTablo.Rows.Add(item.Object.seriNo, item.Object.adi, item.Object.dep, item.Object.durum);
                 }
             }
-        }
-
-        private void Guncellebt_Click(object sender, EventArgs e)
-        {
-            if (MakineListesiTablo.SelectedRows.Count == 0)
-                return;
-            else 
-            {
-                 DataGridViewRow a = MakineListesiTablo.SelectedRows[0];
-                a.Cells[0].Value = makineAdiTB.Text.ToString();
-                a.Cells[1].Value = makineSeriNoTB.Text.ToString();
-                a.Cells[2].Value = MakineDepTB.Text.ToString();
-               
-            }
-                
         }
 
         private async void Silbtn_Click(object sender, EventArgs e)

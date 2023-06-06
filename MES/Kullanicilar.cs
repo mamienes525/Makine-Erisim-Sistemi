@@ -10,7 +10,7 @@ namespace MES
     {
         public string isim { get; set; }
         public string eposta { get; set; }
-        public string sifre { get; set; }
+        public string resimUrl { get; set; }
 
     }
 }
